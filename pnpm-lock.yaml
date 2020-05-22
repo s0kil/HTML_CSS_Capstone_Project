@@ -1,0 +1,99 @@
+devDependencies:
+  sirv-cli: 1.0.0-next.4
+lockfileVersion: 5.1
+packages:
+  /@polka/url/1.0.0-next.11:
+    dev: true
+    resolution:
+      integrity: sha512-3NsZsJIA/22P3QUyrEDNA2D133H4j224twJrdipXN38dpnIOzAbUDtOwkcJ5pXmn75w7LSQDjA4tO9dm1XlqlA==
+  /console-clear/1.1.1:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-pMD+MVR538ipqkG5JXeOEbKWS5um1H4LUUccUQG68qpeqBYbzYy79Gh55jkd2TtPdRfUaLWdv6LPP//5Zt0aPQ==
+  /get-port/3.2.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-3Xzn3hh8Bsi/NTeWrHHgmfCYDrw=
+  /kleur/3.0.3:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
+  /local-access/1.0.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-ykt2pgN0aqIy6KQC1CqdWTWkmUwNgaOS6dcpHVjyBJONA+Xi7AtSB1vuxC/U/0tjIP3wcRudwQk1YYzUvzk2bA==
+  /mime/2.4.5:
+    dev: true
+    engines:
+      node: '>=4.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-3hQhEUF027BuxZjQA3s7rIv/7VCQPa27hN9u9g87sEkWaKwQPuXOkVKtOeiyUrnWqTDiOs8Ed2rwg733mB0R5w==
+  /mri/1.1.5:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-d2RKzMD4JNyHMbnbWnznPaa8vbdlq/4pNZ3IgdaGrVbBhebBsGUUE/6qorTMYNS6TwuH3ilfOlD2bf4Igh8CKg==
+  /sade/1.7.3:
+    dependencies:
+      mri: 1.1.5
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-m4BctppMvJ60W1dXnHq7jMmFe3hPJZDAH85kQ3ACTo7XZNVUuTItCQ+2HfyaMeV5cKrbw7l4vD/6We3GBxvdJw==
+  /semiver/1.1.0:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-QNI2ChmuioGC1/xjyYwyZYADILWyW6AmS1UH6gDj/SFUUUS4MBAWs/7mxnkRPc/F4iHezDP+O8t0dO8WHiEOdg==
+  /sirv-cli/1.0.0-next.4:
+    dependencies:
+      console-clear: 1.1.1
+      get-port: 3.2.0
+      kleur: 3.0.3
+      local-access: 1.0.1
+      sade: 1.7.3
+      semiver: 1.1.0
+      sirv: 1.0.0-next.4
+      tinydate: 1.2.0
+    dev: true
+    engines:
+      node: '>= 6'
+    hasBin: true
+    resolution:
+      integrity: sha512-438y3j555XS4VEfdKzsW+xdlNKz37V7F0X5/n2aw0wqsdq+TQVAD+yTbazQjK9w1YVliXATGL+u2/pmZMsH5/g==
+  /sirv/1.0.0-next.4:
+    dependencies:
+      '@polka/url': 1.0.0-next.11
+      mime: 2.4.5
+      totalist: 1.0.1
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-yZXgECqPpPVR1eYRSlyl1Uv4PyMUIAigobSTmT6Zm2TOdnklfWQz6nlW3jJFsAcbo/MFUeC0fJCpwjxBoV+iwg==
+  /tinydate/1.2.0:
+    dev: true
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-3GwPk8VhDFnUZ2TrgkhXJs6hcMAIIw4x/xkz+ayK6dGoQmp2nUwKzBXK0WnMsqkh6vfUhpqQicQF3rbshfyJkg==
+  /totalist/1.0.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-HuAt9bWDCdLkebrIQr+i63NgQSvjeD2VTNUIEBqof/4pG4Gb6omuBOMUX0vF371cbfImXQzmb4Ue/0c9MUWGew==
+specifiers:
+  sirv-cli: ^1.0.0-next.4
