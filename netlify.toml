@@ -10,4 +10,4 @@ status = 200
 for = "/*"
 
 [headers.values]
-Link = "</data/students-formatted.json>; rel=preload; as=fetch"
+Link = "</data/students-formatted.json>; rel=preload; as=fetch; crossorigin=anonymous;"
