@@ -4,7 +4,7 @@
   "scripts": {
     "start": "sirv ./source/ --dev --quiet --single --port 1234",
     "validate": "concurrently --kill-others \"npm:start\" \"npm:validateCSS\" \"sleep 1s && npm run validateHTML\"",
-    "validateCSS": "stylelint .",
+    "validateCSS": "stylelint source/**/*.css",
     "validateHTML": "node ./tools/validateSite.js"
   },
   "devDependencies": {
