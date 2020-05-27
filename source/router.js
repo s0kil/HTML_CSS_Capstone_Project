@@ -2,6 +2,18 @@
   const APPLICATION_ROUTES = {
     "/": {
       html: "./pages/home.html",
+      script: "./pages/home.js",
+    },
+    "/search": {
+      html: "./pages/search.html",
+    },
+    "/ethnicity": {
+      html: "./pages/ethnicity.html",
+      script: "./pages/ethnicity.js",
+    },
+    "/students": {
+      html: "./pages/students.html",
+      script: "./pages/students.js",
     },
     "404": {
       html: "./pages/404.html",
