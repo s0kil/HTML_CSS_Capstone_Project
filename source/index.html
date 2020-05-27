@@ -4,18 +4,95 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script
-      async
-      src="https://cdn.jsdelivr.net/npm/loadjs@4.2.0/dist/loadjs.min.js"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/loadjs@4.2.0/dist/loadjs.min.js"></script>
     <script async src="./router.js"></script>
+
+    <link
+      as="fetch"
+      rel="preload"
+      crossorigin="anonymous"
+      href="./data/students-formatted.json"
+    />
+
+    <title>$ dir ./microverse/students/</title>
   </head>
 
   <body>
-    <nav></nav>
+    <nav class="nav-header">
+      <div class="nav-brand">
+        <a href="/">
+          <code class="brand-name">
+            <span>$</span>
+            dir ./microverse/students/
+          </code>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <ul>
+          <li class="nav-action">
+            <ion-icon name="search-outline"></ion-icon>
+            <a href="/students">Students</a>
+          </li>
+          <li class="nav-action">
+            <ion-icon name="search-outline"></ion-icon>
+            <a href="/ethnicity">Ethnicity</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <main id="main-content"></main>
 
-    <footer></footer>
+    <footer>
+      <nav class="nav-footer">
+        <ul>
+          <li><a href="/">home</a></li>
+          <li class="footer-brand-icon">
+            <a href="/">
+              <img src="assets/brand-icon.png" alt="Brand Logo" />
+            </a>
+          </li>
+          <li><a href="/search">Search</a></li>
+        </ul>
+      </nav>
+      <section style="display: none;">
+        <div>
+          <h5>subscribe</h5>
+          <form>
+            <input type="email" placeholder="you@example.com" />
+            <input type="submit" />
+          </form>
+        </div>
+        <div>
+          <h5>contact</h5>
+          <p>
+            Have a question or submission?
+            <a href="">info@microverse-students-dir.com</a>
+          </p>
+        </div>
+        <div>
+          <h5>about</h5>
+          <p>
+            PataShule is an online platform that assists Kenyans to find a
+            suitable school for their children by simply searching by county,
+            school level, curriculum, etc. <a href="/about">Learn more...</a>
+          </p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
