@@ -5,3 +5,9 @@ publish = "source"
 from = "/*"
 to = "index.html"
 status = 200
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Link = "</data/students-formatted.json>; rel=preload; as=fetch"
