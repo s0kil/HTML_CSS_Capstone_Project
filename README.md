@@ -28,6 +28,11 @@ To get a local copy up and running follow these simple example steps.
 ### Usage
 
 - `npm run start`
+- Page will be available at http://0.0.0.0:1234/
+
+## Validate HTML
+
+- `npm run validate`
 
 ## Authors
 
