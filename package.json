@@ -3,8 +3,8 @@
   "license": "MIT",
   "scripts": {
     "start": "sirv ./source/ --dev --quiet --single --port 1234",
-    "lint": "stylelint .",
-    "validate": "concurrently --kill-others \"npm:start\" \"sleep 1s && npm run validateHTML\"",
+    "validate": "concurrently --kill-others \"npm:start\" \"npm:validateCSS\" \"sleep 1s && npm run validateHTML\"",
+    "validateCSS": "stylelint .",
     "validateHTML": "node ./tools/validateSite.js"
   },
   "devDependencies": {
