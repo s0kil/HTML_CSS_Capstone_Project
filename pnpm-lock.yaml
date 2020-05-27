@@ -1,5 +1,5 @@
 devDependencies:
-  sirv-cli: 1.0.0-next.4
+  sirv-cli: 1.0.0-next.5
 lockfileVersion: 5.1
 packages:
   /@polka/url/1.0.0-next.11:
@@ -30,13 +30,13 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-ykt2pgN0aqIy6KQC1CqdWTWkmUwNgaOS6dcpHVjyBJONA+Xi7AtSB1vuxC/U/0tjIP3wcRudwQk1YYzUvzk2bA==
-  /mime/2.4.5:
+  /mime/2.4.6:
     dev: true
     engines:
       node: '>=4.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-3hQhEUF027BuxZjQA3s7rIv/7VCQPa27hN9u9g87sEkWaKwQPuXOkVKtOeiyUrnWqTDiOs8Ed2rwg733mB0R5w==
+      integrity: sha512-RZKhC3EmpBchfTGBVb8fb+RL2cWyw/32lshnsETttkBAyAUXSGHxbEJWWRXc751DrIxG1q04b8QwMbAwkRPpUA==
   /mri/1.1.5:
     dev: true
     engines:
@@ -57,7 +57,7 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-QNI2ChmuioGC1/xjyYwyZYADILWyW6AmS1UH6gDj/SFUUUS4MBAWs/7mxnkRPc/F4iHezDP+O8t0dO8WHiEOdg==
-  /sirv-cli/1.0.0-next.4:
+  /sirv-cli/1.0.0-next.5:
     dependencies:
       console-clear: 1.1.1
       get-port: 3.2.0
@@ -65,24 +65,24 @@ packages:
       local-access: 1.0.1
       sade: 1.7.3
       semiver: 1.1.0
-      sirv: 1.0.0-next.4
+      sirv: 1.0.0-next.5
       tinydate: 1.2.0
     dev: true
     engines:
-      node: '>= 6'
+      node: '>= 10'
     hasBin: true
     resolution:
-      integrity: sha512-438y3j555XS4VEfdKzsW+xdlNKz37V7F0X5/n2aw0wqsdq+TQVAD+yTbazQjK9w1YVliXATGL+u2/pmZMsH5/g==
-  /sirv/1.0.0-next.4:
+      integrity: sha512-2p59n/77FUZ5cTBu+mt63pQIyk0fIgHlTsivTybvd8za+RrUSqstzNzxkH/M7VnwYD2NnlrzYDo61AdyMJP8DQ==
+  /sirv/1.0.0-next.5:
     dependencies:
       '@polka/url': 1.0.0-next.11
-      mime: 2.4.5
+      mime: 2.4.6
       totalist: 1.0.1
     dev: true
     engines:
-      node: '>= 6'
+      node: '>= 10'
     resolution:
-      integrity: sha512-yZXgECqPpPVR1eYRSlyl1Uv4PyMUIAigobSTmT6Zm2TOdnklfWQz6nlW3jJFsAcbo/MFUeC0fJCpwjxBoV+iwg==
+      integrity: sha512-KpM5Hu3xp8NzkPg6ht0tiyOrRa2wAMtZm8/eVzw3L9NcyHSP1uUuWc/BIAbQySVOi9TxSl2UCzadaLyYbWiT/A==
   /tinydate/1.2.0:
     dev: true
     engines:
@@ -96,4 +96,4 @@ packages:
     resolution:
       integrity: sha512-HuAt9bWDCdLkebrIQr+i63NgQSvjeD2VTNUIEBqof/4pG4Gb6omuBOMUX0vF371cbfImXQzmb4Ue/0c9MUWGew==
 specifiers:
-  sirv-cli: ^1.0.0-next.4
+  sirv-cli: ^1.0.0-next.5
