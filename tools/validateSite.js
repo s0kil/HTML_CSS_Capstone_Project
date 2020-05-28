@@ -40,7 +40,7 @@ async function validate(html, url) {
     await page.close();
   }
 
-  console.log(results);
+  results.forEach((result) => console.log(result.join("\n")));
 
   await browser.close();
 })();

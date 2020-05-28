@@ -4,7 +4,7 @@
   "scripts": {
     "postinstall": "go get -u github.com/cortesi/devd/cmd/devd",
     "start": "devd --livewatch --quiet --notfound=index.html --port=1234 source/",
-    "validate": "concurrently --kill-others \"npm:start\" \"npm:validateCSS\" \"sleep 1s && npm run validateHTML\"",
+    "validate": "concurrently --kill-others-on-fail --raw \"npm:start\" \"npm:validateCSS\" \"npm run validateHTML && echo 'Validation Complete' && exit 1\"",
     "validateCSS": "stylelint source/**/*.css",
     "validateHTML": "node ./tools/validateSite.js"
   },
