@@ -20,6 +20,7 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 
 - Node, NPM
+- Go (To Run Browser Livereload Server)
 
 ### Install
 
