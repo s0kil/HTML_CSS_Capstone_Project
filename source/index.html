@@ -19,6 +19,29 @@
     <link rel="stylesheet" href="./index.css" />
 
     <script src="https://cdn.jsdelivr.net/npm/loadjs@4.2.0/dist/loadjs.min.js"></script>
+    <script>
+      window.APPLICATION_ROUTES = {
+        "/": {
+          path: "./pages/home/",
+          assets: ["css", "js"],
+        },
+        "/search": {
+          path: "./pages/search/",
+          assets: ["js"],
+        },
+        "/ethnicity": {
+          path: "./pages/ethnicity/",
+          assets: ["css", "js"],
+        },
+        "/students": {
+          path: "./pages/students/",
+          assets: ["css", "js"],
+        },
+        "404": {
+          path: "./pages/404",
+        },
+      };
+    </script>
     <script async src="./router.js"></script>
 
     <title>$ dir ./microverse/students/</title>
