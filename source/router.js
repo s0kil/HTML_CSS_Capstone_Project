@@ -27,9 +27,7 @@
 
   const loadAssets = (route) =>
     route.assets
-      ? route.assets.forEach((asset) =>
-          window.loadjs(assetPath(route.path, asset))
-        )
+      ? window.loadjs(route.assets.map((asset) => assetPath(route.path, asset)))
       : undefined;
 
   const initialize = () => {
