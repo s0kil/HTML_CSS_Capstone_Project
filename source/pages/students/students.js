@@ -11,8 +11,6 @@ window.loadjs(
       (a, b) => Date.parse(b.joined) - Date.parse(a.joined)
     );
 
-    console.log(studentsSortedByDateJoined);
-
     const { html } = window.lighterhtml;
 
     const formatDate = (date) => timeago.format(Date.parse(date));
