@@ -25,6 +25,7 @@ To get a local copy up and running follow these simple example steps.
 ### Install
 
 - `npm install`
+- `go get -u github.com/cortesi/devd/cmd/devd`
 
 ### Usage
 
