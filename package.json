@@ -4,7 +4,7 @@
   "scripts": {
     "start": "devd --livewatch --quiet --notfound=index.html --port=1234 source/",
     "validate": "concurrently --kill-others-on-fail --raw \"npm:start\" \"npm:validateCSS\" \"npm run validateHTML && echo 'Validation Complete' && exit 1\"",
-    "validateCSS": "stylelint source/**/*.css",
+    "validateCSS": "stylelint source/**/*.css --fix",
     "validateHTML": "node ./tools/validateSite.js"
   },
   "devDependencies": {
