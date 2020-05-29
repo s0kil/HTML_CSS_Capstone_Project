@@ -1,32 +1,40 @@
 (async () => {
-  const APPLICATION_ROUTES = {
-    "/": {
-      html: "./pages/home.html",
-    },
-    "404": {
-      html: "./pages/404.html",
-    },
+  const { APPLICATION_ROUTES } = window;
+
+  const assetPath = (path, assetExtension) => {
+    const pathSegments = path.split("/").filter((segment) => segment.length);
+    if (path.endsWith("/"))
+      return (
+        pathSegments.join("/") +
+        "/" +
+        pathSegments[pathSegments.length - 1] +
+        "." +
+        assetExtension
+      );
+    else return pathSegments.join("/") + "." + assetExtension;
   };
 
   const requestedPath = window.location.pathname;
   const route = APPLICATION_ROUTES[requestedPath] || APPLICATION_ROUTES["404"];
-  const routeHtml = await fetch(route.html).then((r) => r.text());
+  const routeHtml = await fetch(assetPath(route.path, "html")).then((r) =>
+    r.text()
+  );
 
-  const renderRouteHtml = (html) => {
+  const renderHtml = (html) => {
     const mainContent = document.getElementById("main-content");
     mainContent.innerHTML = html;
   };
 
-  const loadRouteScript = (route) =>
-    route.script ? window.loadjs(route.script) : undefined;
+  const loadAssets = (route) =>
+    route.assets
+      ? window.loadjs(route.assets.map((asset) => assetPath(route.path, asset)))
+      : undefined;
 
-  if (/complete|interactive|loaded/.test(document.readyState)) {
-    renderRouteHtml(routeHtml);
-    loadRouteScript(route);
-  } else {
-    window.addEventListener("DOMContentLoaded", () => {
-      renderRouteHtml(routeHtml);
-      loadRouteScript(route);
-    });
-  }
+  const initialize = () => {
+    renderHtml(routeHtml);
+    loadAssets(route);
+  };
+
+  if (/complete|interactive|loaded/.test(document.readyState)) initialize();
+  else window.addEventListener("DOMContentLoaded", () => initialize());
 })();

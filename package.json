@@ -2,9 +2,18 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "sirv ./source/ --dev --single --port 1234"
+    "start": "devd --livewatch --quiet --notfound=index.html --port=1234 source/",
+    "validate": "concurrently --kill-others-on-fail --raw \"npm:start\" \"npm:validateCSS\" \"npm run validateHTML && echo 'Validation Complete' && exit 1\"",
+    "validateCSS": "stylelint source/**/*.css --fix",
+    "validateHTML": "node ./tools/validateSite.js"
   },
   "devDependencies": {
-    "sirv-cli": "^1.0.0-next.4"
+    "chrome-finder": "^1.0.7",
+    "concurrently": "^5.2.0",
+    "html-validator": "^5.1.14",
+    "puppeteer-core": "^3.1.0",
+    "sirv-cli": "^1.0.0-next.5",
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended": "^3.0.0"
   }
 }

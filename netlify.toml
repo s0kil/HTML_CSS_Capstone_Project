@@ -1,0 +1,14 @@
+[build]
+environment = { NODE_ENV = "production" }
+publish = "source"
+
+[[redirects]]
+from = "/*"
+to = "index.html"
+status = 200
+
+[[headers]]
+for = "/*"
+
+[headers.values]
+Link = "</data/students-formatted.json>; rel=preload; as=fetch; crossorigin=anonymous;"
